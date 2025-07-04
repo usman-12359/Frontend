@@ -1,0 +1,38 @@
+.cookerBuy {
+    @apply w-full flex flex-col items-center gap-x-[30px] lg:gap-x-[59px]  lg:flex-row lg:items-start py-4 mt-20 lg:mt-32;
+
+    .leftSection {
+        @apply w-full lg:w-1/2 grid grid-cols-2 gap-x-[28.2px] gap-y-[20px] h-full;
+
+        img {
+            @apply w-full h-full;
+        }
+    }
+
+    .rightSection {
+        @apply w-full flex justify-start items-start text-left lg:w-1/2 mt-[35px] box-border;
+
+        .textSection {
+            @apply w-full lg:max-w-[575px] max-w-[450px];
+
+            .preHeadingText {
+                @apply text-xl font-normal text-primary leading-normal;
+
+            }
+
+            .headingText {
+                @apply text-2xl font-bold text-[#191720] leading-normal mb-2;
+
+                span {
+                    @apply text-white;
+                }
+            }
+
+            .listItemText {
+                @apply text-lg lg:text-[16px] text-[#191720] leading-[23px] lg:leading-[25px] mt-2 lg:mt-3;
+            }
+
+        }
+
+    }
+}

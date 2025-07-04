@@ -1,0 +1,27 @@
+.container{
+    @apply w-full min-h-[630px];
+    .wrapper{
+    @apply w-full h-full flex flex-col items-center lg:flex-row;
+    .leftSection{
+        @apply w-full xl:w-3/5 py-14 box-border;
+        .textSection{
+            @apply w-full max-w-[690px];
+            .headingText{
+                @apply text-xl leading-[35px] xl:text-3xl font-bold text-[#191720] xl:leading-[43px];
+                span{
+                    @apply text-primary;
+                }
+            }
+            .ItemText{
+                @apply cursor-pointer h-[50px] bg-primary w-[180px] text-white text-[18px] mt-[18px] leading-[30px] flex justify-center items-center rounded-md;
+            }
+        }
+    }
+    .rightSection{
+        @apply w-full xl:w-2/5 h-full flex justify-end;
+        img{
+            @apply w-full h-full max-w-none;
+        }
+    }
+}
+}

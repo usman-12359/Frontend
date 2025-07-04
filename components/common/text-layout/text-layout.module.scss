@@ -1,0 +1,27 @@
+.wrapper {
+    @apply w-full;
+    
+  
+    .content {
+      @apply w-full flex flex-col items-start  mt-4 mb-14;
+      .textContainer{
+        @apply max-w-[1024px];
+        .heading {
+          @apply w-full text-4xl mt-10 font-bold uppercase;
+        }
+        .date {
+          @apply w-full mt-4  text-base;
+          .link{
+            @apply border-b
+          }
+        }
+      
+        .paragraph {
+          @apply  mt-4 opacity-80 text-textColor;
+          .link{
+            @apply border-b
+          }
+        }
+      }
+    }
+  }

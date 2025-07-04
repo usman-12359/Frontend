@@ -1,0 +1,50 @@
+.wrapper {
+    @apply w-full;
+
+    .container {
+        @apply w-full;
+
+        .tabs {
+            @apply w-full flex items-center justify-between gap-x-1 md:gap-x-10 mt-7 flex-wrap gap-y-2;
+
+            .tabsWrapper {
+                @apply flex items-center gap-x-3 md:gap-x-10 flex-wrap;
+
+                .inActive {
+                    @apply min-w-[89px] lg:min-w-[123px] md:px-2 box-border h-[46px] text-[14px] sm:text-[16px] lg:text-[18px] leading-[30px] font-normal text-[#707070];
+                }
+
+                .active {
+                    @apply rounded-lg min-w-[89px] px-2 lg:min-w-[123px] md:px-2 box-border h-[46px] text-[12px] sm:text-[16px] lg:text-[18px] leading-[30px] font-normal text-white bg-primary;
+                }
+            }
+
+            .parentIcon {
+                @apply flex items-center gap-x-3;
+
+                .lastUpdatedText {
+                    @apply text-textColor text-[14px] mt-1;
+                }
+
+                .editIcon {
+                    @apply cursor-pointer;
+
+                    img {
+                        @apply w-5;
+                    }
+                }
+            }
+
+            .add {
+                @apply w-[81px] lg:w-[91px] h-[44px] text-[14px] leading-[100%] font-normal rounded-md text-white bg-primary flex sm:hidden justify-center items-center;
+            }
+            .import {
+                @apply cursor-pointer sm:hidden w-[81px] lg:w-[91px] box-border h-[44px] rounded-md text-primary bg-white border border-primary flex justify-center items-center;
+            }
+        }
+
+        .screenWrapper {
+            @apply w-full mt-6;
+        }
+    }
+}

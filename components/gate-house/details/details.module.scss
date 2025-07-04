@@ -1,0 +1,56 @@
+.wrapper {
+    @apply w-full h-full;
+
+    .container {
+        @apply w-full relative h-full flex flex-col;
+
+        .headingFor {
+            @apply lg:hidden cursor-pointer mt-8 flex items-center gap-x-1 text-[26px] leading-[39px] text-[#212529] font-medium;
+        }
+
+        .header {
+            @apply w-full order-2 lg:order-1 flex items-center justify-between flex-wrap gap-y-2 mt-8;
+
+            .heading {
+                @apply hidden  cursor-pointer lg:flex items-center gap-x-1 text-[26px] leading-[39px] text-[#212529] font-medium;
+            }
+
+            .btnWrapper {
+                @apply flex items-center flex-row-reverse lg:flex-row gap-x-6;
+
+                .takePhoto {
+                    @apply w-[149px] h-[44px] rounded-lg border border-primary box-border flex justify-center items-center text-primary;
+                }
+
+                .uploadPhoto {
+                    @apply w-[149px] h-[44px] rounded-lg bg-primary border border-primary box-border flex justify-center items-center text-white;
+                }
+            }
+
+            .searchWithIcon {
+                @apply w-full sm:w-[254px] h-[44px] border border-[#D3D3D3] rounded-md flex items-center px-2 gap-x-2;
+
+                input {
+                    @apply w-full text-[16px] leading-[24px] font-normal h-full text-[#707070] outline-none border-none;
+                }
+            }
+        }
+
+        .tabs {
+            @apply w-full order-1 lg:order-2 flex items-center gap-x-10 mt-7;
+
+            .inActive {
+                @apply w-[123px] lg:w-[144px] h-[46px] text-[12px] sm:text-[16px] lg:text-[18px] leading-[30px] font-normal text-[#707070];
+            }
+
+            .active {
+                @apply rounded-lg w-[123px] lg:w-[144px] h-[46px] text-[12px] sm:text-[16px] lg:text-[18px] leading-[30px] font-normal text-white bg-primary;
+            }
+        }
+
+        .screenWrapper {
+            @apply w-full order-3;
+        }
+        
+    }
+}

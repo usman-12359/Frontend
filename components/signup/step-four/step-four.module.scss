@@ -1,0 +1,70 @@
+.wrapper {
+    @apply w-full h-full flex justify-center items-center min-h-[500px] lg:min-h-[700px] 3xl:min-h-[898px] p-[10px] 3xl:p-[16px] box-border;
+
+    .container {
+        @apply w-full h-full flex justify-center items-start;
+
+        .leftWrapper {
+            @apply w-full h-full lg:w-2/4 flex flex-col items-center justify-center;
+
+            .topImg {
+                @apply hidden lg:block w-full px-[30px] cursor-pointer;
+
+                img {
+                    @apply w-[130px] xl:w-[150px] 2xl:w-[213px] h-[67.29px];
+                }
+            }
+
+            .errorStyle {
+                @apply text-red-700 text-[13px] mt-1 ml-1;
+            }
+
+            .textSection {
+                @apply mt-[30px] 2xl:mt-[98.71px] 3xl:mt-60 w-full max-w-[403px];
+
+                .title {
+                    @apply cursor-pointer flex items-center justify-center w-full mt-8 text-[16px] leading-[19.36px] text-primary;
+                }
+
+                .heading {
+                    @apply mt-3 2xl:mt-[17px] font-medium text-[30px] 2xl:text-[40px] leading-[48.41px] text-[#212529] text-center;
+                }
+
+                .paragraph {
+                    @apply mt-3 text-center text-lg font-normal text-[#707070];
+                }
+            }
+            .otpInputsParent{
+                @apply w-full max-w-[403px] mt-[36px];
+                .inputWrapper{
+                    @apply w-full flex items-center justify-center;
+                    // input{
+                    //     @apply w-[74px] h-[74px] outline-none border border-primary text-primary flex justify-center items-center rounded-md;
+                    // }
+                }
+                .btn{
+                    @apply mt-9 w-full h-[55px] rounded-[8px] bg-primary text-center text-white cursor-pointer;
+  
+                    button {
+                      @apply w-full h-full flex justify-center items-center box-border font-medium text-[16px] leading-[19.36px];
+                    }
+                }
+            }
+            .needAccount {
+                @apply mt-5 w-full max-w-[403px] text-[16px] font-[400] leading-[19.36px] text-center text-[#6C6C6C];
+        
+                .link {
+                  @apply text-primary underline pl-1 font-semibold leading-[150%] cursor-pointer;
+                }
+              }
+        }
+
+        .rightContainer {
+            @apply hidden h-full lg:flex justify-end items-center w-2/4;
+
+            img {
+                @apply w-full h-full box-border border-l-4 border-[#293B9133] rounded-[22px];
+            }
+        }
+    }
+}

@@ -1,0 +1,6 @@
+.container{
+    @apply w-full h-full flex justify-center items-center min-h-[70vh];
+    img{
+        @apply max-w-[30%];
+    }
+}

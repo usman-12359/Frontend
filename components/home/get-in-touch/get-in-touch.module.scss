@@ -1,0 +1,87 @@
+.container {
+    @apply w-full min-h-[1200px] lg:min-h-[788px] h-auto bg-[#FFF8F5] mt-32 relative overflow-hidden box-border;
+    background-image: url('/assets/top-left.svg'), url('/assets/bottom-right.png');
+    background-position: top left, bottom right;
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, contain;
+
+    .wrapper {
+        @apply w-full pt-[66px] lg:pt-[130px];
+
+        .formWrapper {
+            @apply w-full h-full flex flex-col items-center lg:flex-row lg:justify-between lg:items-start box-border;
+
+            .left {
+                @apply w-full lg:w-[40%] max-w-[360px] lg:max-w-[398px];
+
+                .heading {
+                    @apply text-[#191720] text-[36px] font-medium leading-[50px];
+                }
+
+                .phone {
+                    @apply text-[12px] md:text-[14px] lg:text-[18px] leading-[32px] font-normal flex items-center gap-x-3 mt-5 text-[#707070];
+                }
+
+                .location {
+                    @apply text-[17px] leading-[20px] font-normal flex items-center gap-x-3 mt-5 text-[#707070];
+                }
+            }
+
+            .right {
+                @apply w-full lg:w-[60%] mt-9 lg:mt-0 max-w-[360px] lg:max-w-[717px];
+
+                .form {
+                    @apply w-full bg-white px-[31px] py-[38px] lg:py-[50px] box-border rounded-lg shadow-sm;
+
+                    .inputParent {
+                        @apply w-full flex flex-col gap-x-4 lg:flex-row items-center;
+
+                        .parentInputField {
+                            @apply w-full mt-[28px];
+
+                            .inputField {
+                                @apply  border border-[#C8C8C8] rounded-[8px];
+
+                                input {
+                                    @apply w-full h-[55px] px-[17px] box-border py-[10px] rounded-[8px];
+                                }
+
+                            }
+                            .errorStyle{
+                                @apply text-red-600 text-xs;
+                            }
+                        }
+                    }
+
+                    .inputFieldText {
+                        @apply mt-[28px] w-full border border-[#C8C8C8] box-border rounded-[8px] overflow-hidden;
+
+                        textarea {
+                            @apply w-full h-full px-[17px] box-border py-[10px] rounded-[8px];
+                        }
+                        
+                    }
+                    .errorStyle{
+                        @apply text-red-600 text-xs;
+                    }
+
+                    .btnSection {
+                        @apply w-full mt-[30px] flex justify-center;
+
+                        button {
+                            @apply flex justify-center items-center w-[290px] h-[54px] lg:w-full rounded-[8px] bg-primary text-white;
+                        }
+                    }
+                }
+            }
+        }
+
+        .cropImage {
+            @apply w-full;
+
+            img {
+                @apply w-[100px] lg:w-[112px] absolute -bottom-3 right-10 md:right-40 lg:right-60;
+            }
+        }
+    }
+}

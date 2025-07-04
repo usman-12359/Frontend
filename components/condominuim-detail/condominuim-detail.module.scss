@@ -1,0 +1,71 @@
+.wrapper {
+    @apply w-full;
+
+    .container {
+        @apply w-full;
+
+        .header {
+            @apply mt-9 mb-6 w-full flex justify-start items-center text-[26px] leading-[39px] text-textColor font-medium cursor-pointer;
+        }
+
+        .tabs {
+            @apply w-full flex flex-col lg:flex-row lg:justify-between gap-y-6 items-start justify-start gap-x-3 md:gap-x-10 mt-7;
+
+            .tabsWrapper {
+                @apply flex items-center gap-x-3 md:gap-x-10;
+
+                .inActive {
+                    @apply min-w-[123px] md:px-2 box-border h-[46px] text-[12px] sm:text-[16px] lg:text-[18px] leading-[30px] font-normal text-[#707070];
+                }
+
+                .active {
+                    @apply rounded-lg min-w-[140px] md:px-2 box-border h-[46px] text-[12px] sm:text-[16px] lg:text-[18px] leading-[30px] font-normal text-white bg-primary;
+                }
+
+                .addUnit {
+                    @apply cursor-pointer min-w-[91px] h-[44px] text-[14px] leading-[16.94px] rounded-md text-white bg-primary flex md:hidden justify-center items-center;
+                }
+            }
+
+            .editIcon {
+                @apply flex items-center gap-x-2 text-[18.888139724731445px] cursor-pointer sm:gap-x-8;
+
+                img {
+                    @apply w-[18.8px] h-[18.8px]
+                }
+                .approveBtn {
+                    @apply cursor-pointer px-2  text-[12px] sm:text-[16px] lg:text-[18px] font-normal min-w-[140px] h-[44px] rounded-md text-white bg-primary flex justify-center items-center;
+                }
+            }
+
+            .searchAndAdd {
+                @apply min-w-full sm:min-w-0 flex lg:flex-row lg:justify-end flex-col-reverse justify-start items-center gap-x-0 sm:gap-x-7 gap-y-2;
+
+                .searchWithIcon {
+                    @apply w-full sm:w-[254px] h-[44px] border border-[#D3D3D3] rounded-md flex items-center px-2 gap-x-2;
+
+                    input {
+                        @apply w-full text-[16px] leading-[24px] font-normal h-full text-[#707070] outline-none border-none;
+                    }
+                }
+
+                .btnWrapper {
+                    @apply flex items-center lg:justify-end justify-start w-full lg:w-fit gap-x-2;
+
+                    .add {
+                        @apply cursor-pointer min-w-[91px] px-2 box-border h-[44px] rounded-md text-white bg-primary flex justify-center items-center;
+                    }
+
+                    .import {
+                        @apply cursor-pointer w-[81px] lg:w-[91px] box-border h-[44px] rounded-md text-primary bg-white border border-primary flex justify-center items-center;
+                    }
+                }
+            }
+
+        }
+
+        .screenWrapper {
+            @apply w-full mt-6;
+        }
+    }
+}

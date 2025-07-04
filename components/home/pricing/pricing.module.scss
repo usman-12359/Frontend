@@ -1,0 +1,100 @@
+.container {
+    @apply w-full mt-[80px];
+
+    .headingSection {
+        @apply w-full text-center flex flex-col items-center;
+
+        .subHeading {
+            @apply max-w-[1167px] font-medium text-[18px] text-primary leading-5;
+        }
+
+        .heading {
+            @apply text-[#191720] max-w-[1167px] mt-[10px] text-[30px] leading-[33.57px] font-medium;
+        }
+
+        .discount {
+            @apply max-w-[1167px] mt-3 font-normal leading-[20px] text-[#707070] text-[18px];
+        }
+    }
+
+    .cardContainer {
+        @apply w-full flex flex-col lg:flex-row lg:justify-center lg:gap-x-[57px] gap-y-[37px] items-center mt-[49px];
+
+        .card {
+            @apply w-[354px] h-[710px] rounded-[8px] py-[34px] flex flex-col justify-between items-center;
+            box-shadow: 0px 4px 6px -1px #ECECEC,
+                0px -4px 6px -1px #ECECEC,
+                0px 2px 4px -2px #ECECEC;
+
+            .cardHead {
+                @apply w-full flex flex-col items-center;
+
+                .pricePlan {
+                    @apply w-full flex justify-center;
+
+                    .planText {
+                        @apply flex justify-center items-center bg-[#FFF6F1] w-[139px] h-[35px] font-medium text-[16px] leading-[27px] text-primary rounded-[6px];
+                    }
+                }
+
+                .pricePermonth {
+                    @apply w-full flex flex-col items-center;
+
+                    .priceFrom {
+                        @apply text-[#191720] max-w-[270px] w-full text-center font-medium mt-[17px] text-[24px] leading-[33.84px];
+
+                        span {
+                            @apply line-through;
+                        }
+                    }
+
+                    .priceTo {
+                        @apply text-[#191720] max-w-[170px] w-full text-center font-medium text-[24px] leading-[33.84px];
+                    }
+
+                    .monthText {
+                        @apply mt-[5px] w-full text-center font-[300] text-[14px] leading-[21px];
+                    }
+                }
+
+                .text1 {
+                    @apply h-5 font-[400] text-[13.35px] leading-5 text-[#111B4F] mt-1;
+                }
+            }
+
+            .cardBody {
+                @apply w-full flex flex-col gap-y-1 items-center mt-[2px] max-w-[262px];
+
+                .text {
+                    @apply w-full text-left text-[14px] leading-[20px] text-[#707070];
+                }
+
+                .text ul {
+
+                    list-style-type: none;
+                    padding: 0;
+                    margin-top: 10;
+                }
+
+                .text ul li {
+                    margin-top: 12px;
+                }
+
+                .text ul li::before {
+                    content: "- ";
+                    margin-right: 0px;
+                }
+            }
+
+            .btnSection {
+                @apply w-full flex justify-center mt-[51px];
+
+                button {
+                    @apply w-[262px] h-[46px] rounded-[8px] flex justify-center items-center bg-primary text-white font-normal text-[16px] leading-[30px];
+                }
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,52 @@
+.modal {
+  @apply w-screen h-full box-border min-h-screen fixed top-0 left-0 z-[1000000] flex justify-center items-center;
+  background: rgba(0, 0, 0, 0.40);
+  backdrop-filter: blur(3px);
+
+  .outer {
+    @apply relative w-[365px] lg:w-[500px] h-auto min-h-[465px] 3xl:max-w-[692px] rounded-lg box-border bg-white flex justify-center items-start;
+
+    .IconClose {
+      @apply text-[14px] font-bold box-border text-[#777777] cursor-pointer hover:text-primary right-[13px] top-[13px] xl:right-[20px] xl:top-[20px] absolute;
+    }
+  }
+
+  .isParcel{
+    @apply relative w-[365px] lg:w-[500px] h-auto min-h-[365px] 3xl:max-w-[692px] rounded-lg box-border bg-white flex justify-center items-start;
+
+    .IconClose {
+      @apply text-[14px] font-bold box-border text-[#777777] cursor-pointer hover:text-primary right-[13px] top-[13px] xl:right-[20px] xl:top-[20px] absolute;
+    }
+  }
+
+  .editUnit {
+    @apply relative w-[365px] lg:w-[500px] h-auto min-h-[335px] 3xl:max-w-[692px] rounded-lg box-border bg-white flex justify-center items-start;
+
+    .IconClose {
+      @apply text-[14px] font-bold box-border text-[#777777] cursor-pointer hover:text-primary right-[13px] top-[13px] xl:right-[20px] xl:top-[20px] absolute;
+    }
+  }
+
+  .editCondominuim{
+    @apply relative w-[365px] sm:w-[600px] lg:w-[800px] h-auto min-h-[335px] max-h-[700px] overflow-y-auto 3xl:max-w-[692px] rounded-lg box-border bg-white flex justify-center items-start;
+
+    .IconClose {
+      @apply text-[14px] font-bold box-border text-[#777777] cursor-pointer hover:text-primary right-[13px] top-[13px] xl:right-[20px] xl:top-[20px] absolute;
+    }
+  }
+
+  .isDelete{
+    @apply relative w-[365px] h-auto min-h-[150px] max-h-[500px] xl:max-h-[650px] overflow-y-auto 3xl:max-w-[692px] rounded-lg box-border bg-white flex justify-center items-start;
+    .IconClose {
+      @apply text-[14px] font-bold box-border text-[#777777] cursor-pointer hover:text-primary right-[13px] top-[13px] xl:right-[20px] xl:top-[20px] absolute;
+    }
+  }
+
+  .isTakePhoto{
+    @apply relative w-[365px] lg:w-[500px] h-auto min-h-[350px] 3xl:max-w-[692px] rounded-lg box-border bg-white flex justify-center items-start;
+
+    .IconClose {
+      @apply text-[14px] font-bold box-border text-[#777777] cursor-pointer hover:text-primary right-[13px] top-[13px] xl:right-[20px] xl:top-[20px] absolute;
+    }
+  }
+}

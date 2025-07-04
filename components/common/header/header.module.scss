@@ -1,0 +1,15 @@
+.wrapper{
+    @apply w-full flex justify-center items-center mt-[30px]  min-h-[67px] py-3 lg:min-h-[71px] bg-primary text-white rounded-xl;
+    .container{
+        @apply w-full h-full flex items-center justify-between flex-wrap px-5 lg:px-10 box-border;
+        .heading{
+            @apply flex items-center gap-x-2 text-[16px] md:text-[18px] leading-[24.51px] lg:text-[25px] lg:leading-[43.58px];
+            img{
+                @apply  w-[30.25px];
+            }
+        }
+        .toggle{
+            @apply min-w-full sm:min-w-0 text-[16px] md:text-[18px] leading-[24.51px] flex items-center gap-x-4 mt-2 lg:mt-0 justify-between;
+        }
+    }
+}

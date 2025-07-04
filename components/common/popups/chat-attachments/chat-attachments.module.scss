@@ -1,0 +1,11 @@
+.wrapper {
+  @apply w-full max-w-full flex justify-center items-center box-border;
+
+  .attachment {
+    @apply cursor-pointer w-full h-[50vh] relative;
+    img{
+      @apply w-full h-full;
+    }
+  
+  }
+}

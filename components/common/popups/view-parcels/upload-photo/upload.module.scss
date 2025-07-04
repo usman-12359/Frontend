@@ -1,0 +1,68 @@
+.wrapper {
+    @apply w-full;
+
+    .container {
+        @apply w-full p-3;
+
+        .selectPhoto {
+            @apply w-full flex-col gap-y-2 h-[430px] cursor-pointer mt-9 border-primary border-2 rounded-md border-dotted flex justify-center items-center text-lg font-semibold text-primary;
+
+            input {
+                @apply hidden
+            }
+        }
+
+        .formContainer {
+            @apply w-full max-h-[500px];
+
+            .heading {
+                @apply w-full text-xl font-semibold text-center mt-8 mb-2;
+            }
+
+            .formWrapper {
+                @apply w-full h-full;
+
+                .errorStyle {
+                    @apply text-[10px] text-red-700;
+                }
+
+                .inputContainer {
+                    @apply w-full flex items-center gap-x-2;
+
+                    .inputWrapper {
+                        @apply w-full mt-2 min-h-[80px];
+
+                        .title {
+                            @apply block text-[#212529] text-[14px] leading-[20px] font-medium;
+                        }
+
+                        input {
+                            @apply text-[16px] leading-[19.5px] text-textColor outline-none w-full px-4 py-2 border rounded-lg border-[#D3D3D3] mt-1 h-[40px] max-h-[40px];
+                        }
+
+                        .errorStyle {
+                            @apply text-[10px] text-red-700;
+                        }
+                    }
+
+                    .errorStyle {
+                        @apply text-[10px] text-red-700;
+                    }
+                }
+
+                .btnWrapper {
+                    @apply flex flex-col gap-y-2 my-[10px];
+
+                    button {
+                        @apply text-[18px] leading-[34px] font-normal flex justify-center items-center w-full h-[40px] bg-orange-500 text-white rounded-md hover:bg-orange-600;
+                    }
+                   .continue{
+                    @apply bg-transparent text-primary border border-primary hover:text-white;
+                   }
+                }
+            }
+
+        }
+
+    }
+}

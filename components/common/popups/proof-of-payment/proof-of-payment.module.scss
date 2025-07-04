@@ -1,0 +1,76 @@
+.wrapper {
+    @apply w-full h-full pb-10 flex justify-center items-center px-5 lg:px-10 box-border;
+
+    .container {
+        @apply w-full;
+
+
+        .leftWrapper {
+            @apply w-full h-full flex flex-col items-center justify-center;
+
+            .textSection {
+                @apply mt-3 w-full max-w-[800px] flex flex-col items-center;
+
+                .pricePlan {
+                    @apply mt-4 w-full flex justify-center;
+
+                    .planText {
+                        @apply flex justify-center items-center bg-[#FFF6F1] w-[139px] h-[35px] font-medium text-[16px] leading-[27px] text-primary rounded-[6px];
+                    }
+                }
+
+                .selectFile {
+                    @apply w-full max-w-[300px] text-sm h-[40px] flex justify-center items-center gap-x-5 cursor-pointer rounded-md border-2 border-textColor border-dotted;
+
+                    input {
+                        @apply hidden;
+                    }
+                }
+
+                .textOne {
+                    @apply mt-2 w-full text-center text-xl text-textColor font-medium;
+                }
+
+                .qrImg {
+                    @apply my-4 w-full flex justify-center items-center text-center;
+
+                    img {
+                        @apply w-[100px] h-[100px] lg:w-[170px] lg:h-[170px];
+                    }
+                }
+
+                .errorStyle {
+                    @apply text-red-500 text-xs mt-1;
+                }
+
+                .copyTxt {
+                    @apply mt-4 w-full flex justify-center items-center text-center gap-x-1;
+
+                    label {
+                        @apply text-primary;
+                    }
+                }
+
+                .copyEmail {
+                    @apply mt-2 w-full text-center flex flex-col md:flex-row justify-center items-center gap-x-1;
+
+                    label {
+                        @apply text-primary;
+                    }
+                }
+
+            }
+
+            .btnSection {
+                @apply w-full flex justify-center mt-9 gap-3 flex-wrap;
+
+                button {
+                    @apply w-full lg:w-[262px] h-[46px] rounded-[8px] flex justify-center items-center bg-primary text-white font-normal text-[16px] leading-[30px];
+                }
+                .cancelInfo{
+                    @apply bg-transparent text-primary border-primary border;
+                }
+            }
+        }
+    }
+}

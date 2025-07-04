@@ -1,0 +1,23 @@
+.container {
+	@apply w-full flex justify-start mt-2 mb-5;
+	.wrapper {
+		@apply w-full items-start;
+		.heading {
+			@apply text-center text-[24px] font-semibold py-2 leading-[32.74px];
+		}
+
+			.text1 {
+			@apply  text-[18px] font-normal text-center py-6 leading-[22.74px];
+		}
+
+		.btnsContainer {
+			@apply flex justify-center w-full gap-2 items-center;
+			.cancelBtn {
+				@apply flex justify-center items-center min-w-[77.63px] px-2 box-border  h-[40px] bg-white rounded-md text-primary  border-[1.5px] border-primary text-center hover:border-primary hover:text-primary text-[16px] font-semibold;
+			}
+			.deleteBtn {
+				@apply flex justify-center items-center min-w-[77.63px] px-2 box-border  h-[40px] bg-primary  rounded-md text-white border-[1.5px] border-primary text-center  hover:bg-primary  text-[16px]   font-semibold;
+			}
+		}
+	}
+}

@@ -1,0 +1,70 @@
+.container {
+    @apply w-full min-h-[2400px] lg:min-h-[749px] h-auto bg-[#FFF8F5] mt-32 relative overflow-hidden box-border;
+    background-image: url('/assets/right-circle.png'), url('/assets/left-circle.png');
+    background-position: bottom left, top right;
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, contain;
+
+    .wrapper {
+        @apply w-full h-full flex flex-col items-center;
+
+        .header {
+            @apply w-full mt-[85px] flex flex-col items-center;
+
+            .heading {
+                @apply w-full text-center text-[18px] leading-[21.78px] font-medium text-primary;
+            }
+
+            .title {
+                @apply max-w-[294px] md:max-w-none w-full text-center text-[36px] leading-[43.57px] lg:text-[44px] lg:leading-[53.25px] font-medium;
+            }
+
+            .description {
+                @apply max-w-[346px] md:max-w-[700px] lg:max-w-[700px] 3xl:max-w-[1167px] w-full text-center font-normal text-[18px] leading-[30px] text-[#707070] mt-5;
+            }
+        }
+
+        .cards {
+            @apply max-w-[900px] justify-between xl:max-w-[1430px] relative min-h-[1700px] lg:min-h-0 mt-[34px] lg:mt-6 w-full flex flex-col lg:flex-row lg:justify-between items-center justify-center flex-wrap lg:flex-nowrap gap-y-[130px] gap-x-0 lg:gap-x-[150px] xl:gap-x-[150px] 3xl:gap-x-[216px];
+
+            .cardItem {
+                @apply relative w-[328px] xl:w-[328px] h-[362px] flex flex-col  items-center;
+
+                img {
+                    @apply z-10 w-[214px] h-[184px]  xl:w-[214px] xl:h-[184px];
+                }
+
+                .cardTitle {
+                    @apply w-full text-[#191720] text-[32px] leading-[38.73px] md:text-[20px] 3xl:text-[32px] text-center font-medium md:leading-[20px] 3xl:leading-[38.73px] mt-[28.4px];
+                }
+
+                .cardDesc {
+                    @apply text-[#191720] max-w-[228px] lg:max-w-[150px] text-center w-full text-[16px] lg:text-[15px] 3xl:text-[16px] font-medium leading-[24.64px] lg:leading-[19px] mt-[28.4px] text-[#191720b3];
+                    b{
+                        @apply text-[#191720];
+                    }
+                }
+            }
+            .dottedImageForMobile{
+                @apply z-0 lg:hidden flex justify-center absolute top-[28%] rotate-90;
+            }
+            .dottedImageForDesktop{
+                @apply z-0 lg:w-[190px] xl:w-[310px] hidden lg:flex  absolute left-48 xl:left-64 top-[30%];
+            }
+            .dottedImageForMobileTwo{
+                @apply z-0 lg:hidden flex justify-center absolute top-[68%] rotate-90;
+            }
+            .dottedImageForDesktopTwo{
+                @apply z-0 lg:w-[190px] xl:w-[310px] hidden lg:flex  absolute right-40 xl:right-64 top-[30%];
+            }
+        }
+
+        .cropImage {
+            @apply w-full;
+
+            img {
+                @apply w-[100px] lg:w-[112px] absolute -bottom-3 left-10 md:left-40 lg:left-60;
+            }
+        }
+    }
+}

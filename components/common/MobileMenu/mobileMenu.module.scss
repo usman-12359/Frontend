@@ -1,0 +1,55 @@
+.wrapper {
+  @apply w-screen min-h-[150vh] fixed overflow-auto flex flex-col items-center bg-white top-0 p-6 z-[1000] right-0;
+  .closeRow {
+    @apply w-full flex justify-end;
+    .closeIcon {
+      @apply text-2xl cursor-pointer text-primary;
+    }
+  }
+  .linksContainer {
+    @apply w-full h-full flex flex-col items-center justify-center;
+    .links {
+      @apply w-full h-full flex flex-col justify-center items-center max-w-[500px] mb-5;
+      .inactive {
+        @apply w-full flex gap-x-1 justify-center text-lg text-black capitalize text-center px-4 py-2 border-b-2 border-[#E0E8F4];
+      }
+      .active {
+        @apply flex gap-x-1 justify-center w-full text-lg text-primary uppercase text-center border-b-2 border-primary px-4 py-2;
+      }
+      .button {
+        @apply w-full flex items-center justify-center gap-3
+        p-3 mt-10 rounded-md;
+
+        background-image: linear-gradient(
+          to right,
+          #ce6cf7,
+          #5860cb
+        ) !important;
+
+        span {
+          @apply text-lg;
+        }
+      }
+    }
+    .LanguageAndLogin {
+      @apply w-full max-w-[500px] justify-between items-center gap-y-4 flex flex-col;
+
+      button {
+        @apply w-full flex justify-center items-center relative text-white text-[14px] font-semibold h-[50px] rounded-md  bg-primary hover:text-white;
+
+      }
+      .register{
+        @apply bg-transparent border border-primary text-black hover:text-primary;
+      }
+       .logout{
+        @apply cursor-pointer bg-transparent w-full flex justify-center items-center px-5 py-4 rounded-lg min-h-[50px] h-[50px];
+        box-shadow: 0px 4px 6px -1px #ECECEC,
+            0px -4px 6px -1px #ECECEC,
+            0px 2px 4px -2px #ECECEC;
+        img{
+            @apply w-[75px];
+        }
+    }
+    }
+  }
+}

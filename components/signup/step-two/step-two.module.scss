@@ -1,0 +1,117 @@
+.wrapper {
+  @apply w-full h-full flex justify-center items-start min-h-[559px] p-[10px] 3xl:p-[16px] box-border;
+
+  .container {
+    @apply w-full h-full flex justify-center items-start;
+
+    .leftWrapper {
+      @apply w-full h-full flex flex-col items-center justify-center;
+
+      .topImg {
+        @apply hidden lg:block w-full px-[30px] cursor-pointer;
+
+        img {
+          @apply w-[130px] xl:w-[150px] 2xl:w-[213px] h-[67.29px];
+        }
+      }
+
+      .textSection {
+        @apply mt-3 w-full max-w-[384px];
+
+        .title {
+          @apply cursor-pointer flex items-center justify-center w-full mt-8 text-[16px] leading-[19.36px] text-primary;
+        }
+
+        .heading {
+          @apply mt-3 font-medium text-[30px] 2xl:text-[40px] leading-[36.31px] text-[#212529] text-center;
+        }
+
+        .paragraph {
+          @apply mt-3 text-center text-lg font-normal text-[#707070];
+        }
+      }
+
+      .cardContainer {
+        @apply w-full mb-[83px] flex flex-col lg:flex-row lg:justify-center lg:gap-x-[57px] gap-y-[37px] items-center mt-[36px];
+
+        .card {
+          @apply w-[354px] min-h-[650px] rounded-[8px] py-[34px] flex flex-col justify-between items-center;
+          box-shadow: 0px 4px 6px -1px #ECECEC,
+            0px -4px 6px -1px #ECECEC,
+            0px 2px 4px -2px #ECECEC;
+
+          .cardHead {
+            @apply w-full flex flex-col items-center;
+
+            .pricePlan {
+              @apply w-full flex justify-center;
+
+              .planText {
+                @apply flex justify-center items-center bg-[#FFF6F1] w-[139px] h-[35px] font-medium text-[16px] leading-[27px] text-primary rounded-[6px];
+              }
+            }
+
+            .pricePermonth {
+              @apply w-full flex flex-col items-center;
+
+              .priceFrom {
+                  @apply text-[#191720] max-w-[275px] w-full text-center font-medium mt-[17px] text-[24px] leading-[33.84px];
+
+                  span {
+                      @apply line-through;
+                  }
+              }
+
+              .priceTo {
+                  @apply text-[#191720] max-w-[170px] w-full text-center font-medium text-[24px] leading-[33.84px];
+              }
+
+              .monthText {
+                  @apply mt-[5px] w-full text-center font-[300] text-[14px] leading-[21px];
+              }
+          }
+
+            .text1 {
+              @apply h-5 font-[400] text-[13.35px] leading-5 text-[#111B4F] mt-1;
+            }
+          }
+
+          .cardBody {
+            @apply w-full flex flex-col gap-y-1 items-center mt-[2px] max-w-[262px];
+
+            .text {
+                @apply w-full text-left text-[14px] leading-[20px] text-[#707070];
+            }
+
+            .text ul {
+
+                list-style-type: none;
+                padding: 0;
+                margin-top: 10;
+            }
+
+            .text ul li {
+                margin-top: 12px;
+            }
+
+            .text ul li::before {
+                content: "- ";
+                margin-right: 0px;
+            }
+        }
+
+          .btnSection {
+            @apply w-full flex justify-center mt-[51px];
+
+            button {
+              @apply w-[262px] h-[46px] rounded-[8px] flex justify-center items-center bg-primary text-white font-normal text-[16px] leading-[30px];
+            }
+          }
+        }
+      }
+
+    }
+
+
+  }
+}

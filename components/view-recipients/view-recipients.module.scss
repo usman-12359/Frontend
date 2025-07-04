@@ -1,0 +1,57 @@
+.wrapper {
+    @apply w-full;
+
+    .container {
+        @apply w-full;
+
+        .header {
+            @apply mt-8 w-full flex items-center gap-y-2 justify-between flex-wrap;
+
+            .heading {
+                @apply cursor-pointer items-center flex text-[26px] leading-[39px] text-textColor font-medium;
+            }
+
+            .searchAndAdd {
+                @apply min-w-full sm:min-w-0 flex flex-wrap gap-y-3 items-center gap-x-0 sm:gap-x-7;
+
+                .searchWithIcon {
+                    @apply w-full sm:w-[254px] h-[44px] border border-[#D3D3D3] rounded-md flex items-center px-2 gap-x-2;
+
+                    input {
+                        @apply w-full text-[16px] leading-[24px] font-normal h-full text-[#707070] outline-none border-none;
+                    }
+                }
+
+                .btnWrapperForMobile {
+                    @apply w-full items-center flex gap-x-2 sm:hidden;
+
+                    .add {
+                        @apply cursor-pointer min-w-[184px] box-border h-[44px] rounded-md text-white bg-primary flex justify-center items-center;
+                    }
+
+                    .import {
+                        @apply cursor-pointer w-[184px] box-border h-[44px] rounded-md text-primary bg-white border border-primary flex justify-center items-center;
+                    }
+                }
+
+                .btnWrapper {
+                    @apply items-center hidden sm:flex sm:gap-x-7;
+
+                    .add {
+                        @apply cursor-pointer min-w-[149px] px-2 h-[44px] rounded-md text-white bg-primary flex justify-center items-center;
+                    }
+
+                    .import {
+                        @apply cursor-pointer w-[126px] h-[44px] rounded-md text-primary bg-white border border-primary flex justify-center items-center;
+                    }
+
+                }
+
+            }
+        }
+
+        .tableWrapper{
+            @apply w-full;
+        }
+    }
+}

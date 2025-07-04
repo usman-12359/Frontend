@@ -1,0 +1,76 @@
+.wrapper {
+    @apply w-full h-full flex justify-center items-center min-h-[500px] lg:min-h-[700px] 3xl:min-h-[898px] p-[10px] 3xl:p-[16px] box-border;
+  
+    .container {
+      @apply w-full h-full flex justify-center items-start;
+  
+      .leftWrapper {
+        @apply w-full h-full lg:w-2/4 flex flex-col items-center justify-center;
+  
+        .topImg {
+          @apply hidden lg:block w-full px-[30px] cursor-pointer;
+  
+          img {
+            @apply w-[130px] xl:w-[150px] 2xl:w-[213px] h-[67.29px];
+          }
+        }
+  
+        .errorStyle {
+          @apply text-red-700 text-[10px] mt-[2px] ml-1;
+        }
+  
+        .textSection {
+          @apply mt-3 w-full max-w-[384px];
+  
+          .title {
+            @apply flex items-center justify-center w-full mt-8 text-[16px] leading-[19.36px] text-primary;
+          }
+  
+          .heading {
+            @apply mt-3 font-medium text-[30px] 2xl:text-[40px] leading-[48.41px] text-[#212529] text-center;
+          }
+  
+          .paragraph {
+            @apply mt-3 text-center text-lg font-normal text-[#707070];
+          }
+        }
+  
+        form {
+          @apply w-full max-w-[387px] mt-7;
+  
+         
+  
+          .inputHeading {
+            @apply w-full font-medium mt-[19px] text-lg text-textColor;
+          }
+  
+          .inputContainer {
+            @apply mt-1 2xl:mt-[11px] w-full border box-border rounded-lg px-2 flex items-center justify-between;
+  
+            .input {
+              @apply w-full h-[50px] 3xl:h-[55px] placeholder-[#DEDEDE] text-textColor outline-none px-7 box-border;
+            }
+          }
+  
+  
+  
+          .btn {
+            @apply mt-9 w-full h-[55px] rounded-[8px] bg-primary text-center text-white cursor-pointer;
+  
+            button {
+              @apply w-full h-full flex justify-center items-center box-border font-medium text-[16px] leading-[19.36px];
+            }
+          }
+  
+        }
+      }
+  
+      .rightContainer {
+        @apply hidden h-full lg:flex justify-end items-center w-2/4;
+  
+        img {
+          @apply w-full h-full box-border border-l-4 border-[#293B9133] rounded-[22px];
+        }
+      }
+    }
+  }

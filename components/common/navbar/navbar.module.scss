@@ -1,0 +1,79 @@
+.wrapper {
+  @apply h-auto min-h-[114px] w-full flex justify-center shadow-md;
+
+  .container {
+    @apply w-full h-full max-w-[1900px] lg:gap-x-[30px] xl:gap-x-[130px] flex justify-between items-center;
+
+    .logo {
+      @apply cursor-pointer;
+
+      .icon {
+        @apply xm:w-[100px] sm:w-[120px] md:w-[150px] xl:w-[213px]  3xl:min-w-[213px];
+      }
+    }
+
+    .linkWrapper {
+      @apply justify-between hidden lg:flex;
+
+      .links {
+        @apply hidden lg:flex lg:gap-x-[30px] xl:gap-x-[40px] items-center cursor-pointer justify-between;
+
+        .active {
+          @apply text-primary text-base;
+
+          .link {
+            @apply relative flex flex-col text-primary items-center;
+
+            .text {
+              @apply flex items-center gap-x-[3px] text-base whitespace-nowrap font-bold;
+            }
+
+            .activeBar {
+              @apply h-[3px] rounded-[4.5px] absolute bottom-[-45px];
+              width: calc(100% + 20px);
+              background: linear-gradient(to left, #fcfaf9, #F36B31) !important;
+            }
+          }
+        }
+
+        .inactive {
+          @apply text-textColor font-medium text-base;
+
+          .link {
+            @apply flex flex-col items-center relative;
+
+            .text {
+              @apply flex items-center gap-x-[3px] text-base whitespace-nowrap hover:text-primary;
+            }
+
+          }
+        }
+      }
+    }
+
+    .LanguageAndLogin {
+      @apply justify-between items-center gap-x-4 lg:gap-x-5 flex;
+
+      .menuIcon {
+        @apply lg:hidden ml-auto text-textColor cursor-pointer text-3xl;
+      }
+
+      button {
+        @apply hidden lg:flex justify-center items-center relative text-white text-[14px] font-semibold h-[50px] w-[142px] rounded-md  bg-primary hover:text-white;
+
+      }
+      .register{
+        @apply bg-transparent border border-primary text-black hover:text-primary;
+      }
+       .logout{
+        @apply hidden lg:flex  cursor-pointer h-[50px] w-[142px] bg-transparent flex justify-start items-center px-5 py-4 rounded-lg min-h-[50px];
+        box-shadow: 0px 4px 6px -1px #ECECEC,
+            0px -4px 6px -1px #ECECEC,
+            0px 2px 4px -2px #ECECEC;
+        img{
+            @apply w-[75px];
+        }
+    }
+    }
+  }
+}

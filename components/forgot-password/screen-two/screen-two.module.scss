@@ -1,0 +1,79 @@
+.leftWrapper {
+    @apply w-full h-full lg:w-2/4 flex flex-col items-center justify-center;
+
+    .topImg {
+      @apply hidden lg:block w-full pt-[30px] pl-[38px] cursor-pointer;
+
+      img {
+        @apply w-[130px] xl:w-[150px] 2xl:w-[213px] h-[67.29px];
+      }
+    }
+
+    .errorStyle {
+      @apply text-red-700 text-[13px] mt-1 ml-1;
+    }
+
+    .textSection {
+      @apply mt-[30px] 2xl:mt-[167.71px] 3xl:mt-60 w-full max-w-[384px];
+
+      .heading {
+        @apply font-medium text-[30px] 2xl:text-[35px] 3xl:text-[50px] text-[#212529] text-center;
+      }
+
+      .paragraph {
+        @apply mt-3 2xl:mt-[17px] text-center text-lg font-normal text-[#707070];
+      }
+    }
+
+    form {
+      @apply w-full flex justify-center flex-col items-center max-w-[384px] mt-4 2xl:mt-7;
+
+      .inputHeading {
+        @apply w-full font-medium  text-lg text-textColor mt-5;
+      }
+      .inputHeadingForPassword {
+        @apply w-full font-medium  text-lg text-textColor flex justify-between mt-5;
+        span{
+          @apply text-[14px] leading-[28.94px] font-normal cursor-pointer;
+        }
+      }
+
+      .inputContainer {
+        @apply mt-1 2xl:mt-[11px] w-full border box-border max-w-[384px] rounded-lg px-2 flex items-center justify-between;
+
+        .input {
+          @apply w-full h-[50px] 3xl:h-[55px] placeholder-[#DEDEDE] text-[#707070] outline-none px-[26px] box-border;
+        }
+      }
+
+      .checkboxContainer {
+        @apply mt-2 2xl:mt-5 flex items-center gap-x-[10px] w-full;
+
+        .box {
+          @apply sm:w-[18px] sm:h-[18px] border-2 border-black;
+        }
+
+        .checkboxText {
+          @apply font-medium text-[16px] leading-[19.36px] text-[#707070];
+        }
+      }
+
+      .btn {
+        @apply mt-9 w-full h-[55px] rounded-[8px] bg-primary text-center text-white cursor-pointer;
+
+        button {
+          @apply w-full h-full flex justify-center items-center box-border font-medium text-[16px] leading-[19.36px];
+        }
+      }
+
+    }
+
+    .needAccount {
+      @apply mt-5 w-full max-w-[384px] text-[16px] font-[400] leading-[19.36px] text-center text-[#6C6C6C];
+
+      .link {
+        @apply cursor-pointer text-primary underline pl-1 font-semibold leading-[150%];
+      }
+    }
+
+  }

@@ -1,0 +1,6 @@
+.wrapper{
+    @apply w-full mt-5;
+    .heading {
+        @apply hidden sm:block text-[26px] leading-[39px] text-textColor font-medium;
+    }
+}

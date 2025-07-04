@@ -1,0 +1,9 @@
+.wrapper{
+    @apply w-full;
+    .container{
+        @apply w-full;
+        .header{
+            @apply cursor-pointer mt-8 w-full flex justify-start items-center text-[26px] leading-[39px] text-textColor font-medium;
+        }
+    }
+}

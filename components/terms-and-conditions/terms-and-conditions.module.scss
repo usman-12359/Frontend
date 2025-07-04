@@ -1,0 +1,12 @@
+.wrapper {
+    @apply w-full max-w-[1024px];
+    .paragraph {
+      @apply mb-6 pb-6 max-w-[800px];
+    }
+    .heading {
+      @apply mb-6 font-bold;
+    }
+    .pointContainer {
+      @apply ml-[15px] flex space-x-[20px] mt-4;
+    }
+  }

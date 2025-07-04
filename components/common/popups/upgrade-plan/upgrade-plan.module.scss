@@ -1,0 +1,20 @@
+.wrapper {
+    @apply w-full h-full pb-10 flex justify-center items-center px-5 lg:px-10 box-border;
+
+    .container {
+        @apply w-full;
+
+        .heading {
+            @apply w-full text-xl font-medium text-center mt-10;
+        }
+        .btnsContainer {
+			@apply mt-5 flex justify-center w-full gap-2 items-center;
+			.cancelBtn {
+				@apply flex justify-center items-center w-[77.63px]  h-[40px] bg-white rounded-md text-primary  border-[1.5px] border-primary text-center hover:border-primary hover:text-primary text-[14px] font-semibold;
+			}
+			.deleteBtn {
+				@apply flex justify-center items-center w-[77.63px]  h-[40px] bg-primary  rounded-md text-white border-[1.5px] border-primary text-center  hover:bg-primary  text-[14px]   font-semibold;
+			}
+		}
+    }
+}

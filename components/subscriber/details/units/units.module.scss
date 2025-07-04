@@ -1,0 +1,124 @@
+.wrapper {
+    @apply w-full;
+
+    .container {
+        @apply w-full;
+
+        .header {
+            @apply w-full flex items-center justify-between;
+
+            .heading {
+                @apply hidden sm:block text-[26px] leading-[39px] text-textColor font-medium;
+            }
+
+            .searchAndAdd {
+                @apply min-w-full sm:min-w-0 flex items-center gap-x-0 sm:gap-x-7;
+
+                .searchWithIcon {
+                    @apply w-full sm:w-[254px] h-[44px] border border-[#D3D3D3] rounded-md flex items-center px-2 gap-x-2;
+
+                    input {
+                        @apply w-full text-[16px] leading-[24px] font-normal h-full text-[#707070] outline-none border-none;
+                    }
+                }
+
+                .add {
+                    @apply cursor-pointer hidden min-w-[91px] px-2 box-border h-[44px] rounded-md text-white bg-primary sm:flex justify-center items-center;
+                }
+                .import {
+                    @apply cursor-pointer hidden w-[81px] lg:w-[91px] box-border h-[44px] rounded-md text-primary bg-white border border-primary sm:flex justify-center items-center;
+                }
+            }
+        }
+
+        .cardWrapper {
+            @apply w-full flex items-center flex-wrap justify-center xl:justify-between gap-x-3 gap-y-5 py-6;
+
+            .card {
+                @apply w-[390px] sm:w-[254px] min-h-[240px] max-h-[245px] bg-[#FBFBFB] rounded-md px-[18px] py-6 box-border;
+
+                .menuWithIcon {
+                    @apply w-full flex justify-between;
+
+                    .withIcon {
+                        @apply flex items-start gap-x-[14px];
+
+                        .icon {
+                            @apply w-[43px] h-[42px];
+
+                            img {
+                                @apply w-full h-full;
+                            }
+                        }
+
+                        .name {
+                            @apply flex flex-col;
+
+                            label {
+                                @apply text-[14px] leading-[19.36px] font-semibold text-textColor;
+                            }
+
+                            span {
+                                @apply text-[14px] leading-[16.94px] text-[#707070] mt-2;
+                            }
+                        }
+                    }
+
+                    .editIcon {
+                        @apply relative;
+
+                        .editPopup {
+                            @apply w-[100px] min-h-[20px] bg-white shadow-lg rounded absolute top-0 right-3 flex flex-col py-2 px-4;
+
+                            span {
+                                @apply cursor-pointer text-[12px] leading-[21.78px] text-textColor border-b border-[#D3D3D3];
+                            }
+
+                            p {
+                                @apply cursor-pointer text-[12px] leading-[21.78px] text-red-500 pt-1;
+
+                            }
+                        }
+                    }
+                }
+
+                .address {
+                    @apply min-h-[33px] mt-4 gap-x-3 w-full flex text-[14px] leading-[1.5em] text-textColor;
+
+                    .left {
+                        @apply font-medium;
+                    }
+
+                    .right {
+                        @apply font-normal text-[#707070];
+                        word-break: break-all;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: normal;
+                        line-height: 1.5em;
+                        max-height: 3em;
+                    }
+                }
+
+                .numofUnits {
+                    @apply mt-4 gap-x-3 w-full flex text-[14px] leading-[16.94px] text-textColor;
+
+                    .left {
+                        @apply font-medium;
+                    }
+
+                    .right {
+                        @apply font-normal text-[#707070];
+                    }
+                }
+
+                .view {
+                    @apply mt-6 w-full h-[40px] shadow-lg rounded-md flex justify-center items-center border border-primary text-primary hover:bg-primary hover:text-white;
+                }
+            }
+        }
+    }
+}

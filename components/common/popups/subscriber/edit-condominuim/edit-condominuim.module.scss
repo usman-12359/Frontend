@@ -1,0 +1,21 @@
+.wrapper {
+    @apply w-full h-full flex justify-center items-center px-5 lg:px-16 box-border;
+
+    .container {
+        @apply w-full;
+
+        .heading {
+            @apply w-full text-3xl font-medium text-center mt-10;
+        }
+
+        .formWrapper {
+            @apply w-full mt-[34px] flex flex-col gap-y-3;
+
+            
+
+            button {
+                @apply flex justify-center items-center text-[16px] font-medium my-[30px] w-full h-[40px] 3xl:h-[54px] bg-orange-500 text-white rounded-md hover:bg-orange-600;
+            }
+        }
+    }
+}

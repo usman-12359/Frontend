@@ -1,0 +1,53 @@
+.wrapper {
+    @apply w-full h-full flex justify-center items-center px-5 lg:px-16 box-border;
+
+    .container {
+        @apply w-full max-h-[600px];
+
+        .heading {
+            @apply w-full text-3xl font-medium text-center mt-10;
+        }
+
+        .formWrapper {
+            @apply w-full;
+
+            .inputWrapper {
+                @apply w-full mt-3;
+
+                .title {
+                    @apply block text-gray-700 text-[18px] leading-[30px] font-medium;
+                }
+
+                input {
+                    @apply text-[16px] leading-[19.5px] text-textColor outline-none w-full px-4 py-2 border rounded-lg border-[#D3D3D3] mt-1 h-[40px] 3xl:h-[52px] max-h-[52px];
+                }
+
+                select {
+                    @apply text-[16px] leading-[19.5px] text-textColor outline-none w-full px-4 py-2 border rounded-lg border-[#D3D3D3] mt-1 h-[40px] 3xl:h-[52px] max-h-[52px];
+
+                }
+            }
+
+            .btnWrapper {
+                @apply flex w-full gap-x-3;
+
+                button {
+                    @apply flex justify-center items-center text-[14px] leading-[20px] my-[30px] w-full h-[40px] 3xl:h-[54px] border border-primary rounded-md text-primary;
+
+                    &:last-child {
+                        @apply bg-orange-500 text-white;
+                    }
+                }
+            }
+            .CollectedbtnWrapper{
+                @apply flex w-full gap-x-3;
+
+                button {
+                    @apply flex justify-center items-center text-[14px] leading-[20px] my-[30px] w-full h-[40px] 3xl:h-[54px] bg-orange-500 text-white rounded-md hover:bg-orange-600;
+
+                    
+                }
+            }
+        }
+    }
+}

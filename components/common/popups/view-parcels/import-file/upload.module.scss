@@ -1,0 +1,49 @@
+.wrapper{
+    @apply w-full;
+    .container{
+        @apply w-full p-3;
+        .selectPhoto{
+            @apply w-full h-[430px] cursor-pointer mt-9 border-primary border-2 rounded-md border-dotted flex justify-center items-center text-lg font-semibold text-primary;
+            input{
+                @apply hidden
+            }
+        }
+        .formContainer{
+            @apply w-full max-h-[500px] overflow-y-auto;
+
+            .heading {
+                @apply w-full text-xl font-semibold text-center mt-8 mb-2;
+            }
+    
+            .formWrapper {
+                @apply w-full;
+    
+                .inputContainer{
+                    @apply w-full flex items-center gap-x-2;
+                    .inputWrapper {
+                        @apply w-full mt-2;
+        
+                        .title {
+                            @apply block text-[#212529] text-[14px] leading-[20px] font-medium;
+                        }
+        
+                        input {
+                            @apply text-[16px] leading-[19.5px] text-textColor outline-none w-full px-4 py-2 border rounded-lg border-[#D3D3D3] mt-1 h-[40px] max-h-[40px];
+                        }
+        
+                        .errorStyle{
+                            @apply text-xs text-red-700 mt-1;
+                        }
+                    }
+                }
+               
+    
+                button {
+                    @apply text-[18px] leading-[34px] font-normal flex justify-center items-center mt-[30px] w-full h-[40px] bg-orange-500 text-white rounded-md hover:bg-orange-600;
+                }
+            }
+
+        }
+        
+    }
+}
