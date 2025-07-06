@@ -21,7 +21,6 @@ jobs:
       - name: Install dependencies
         run: npm install --legacy-peer-deps
 
-
       - name: Build
         run: npm run build
 
@@ -29,7 +28,11 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: frontend-artifact
-          path: .next/    # Or your actual output folder (e.g., "out" if using static export)
+          path: |
+            .next
+            package.json
+            next.config.js
+            public
 
   deploy:
     needs: build
@@ -47,6 +50,11 @@ jobs:
           rm -rf /home/ubuntu/deploy/frontend/*
           cp -r /home/ubuntu/deploy-temp/frontend/* /home/ubuntu/deploy/frontend/
 
+      - name: Install production dependencies
+        working-directory: /home/ubuntu/deploy/frontend
+        run: npm install --omit=dev --legacy-peer-deps
+
       - name: Restart Frontend Service
+        working-directory: /home/ubuntu/deploy/frontend
         run: |
-          pm2 reload all || pm2 start npm --name "my-frontend-app" -- start
+          pm2 list | grep my-frontend-app && pm2 restart my-frontend-app || pm2 start npm --name "my-frontend-app" -- start
