@@ -58,3 +58,9 @@ jobs:
         working-directory: /home/ubuntu/deploy/frontend
         run: |
           pm2 list | grep my-frontend-app && pm2 restart my-frontend-app || pm2 start npm --name "my-frontend-app" -- start
+
+
+
+
+
+          
